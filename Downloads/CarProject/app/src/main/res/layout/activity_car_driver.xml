@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_car_driver"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.liz.carproject.CarDriver">
+    <ImageButton
+        android:layout_height="120dp"
+        app:srcCompat="@drawable/mycar"
+        android:id="@+id/my_button"
+        android:scaleType="fitXY"
+        android:adjustViewBounds="true"
+        android:layout_width="175dp"
+        android:layout_below="@+id/her_button"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="17dp" />
+
+    <ImageButton
+        android:layout_width="175dp"
+        android:layout_height="120dp"
+        app:srcCompat="@drawable/hercar"
+        android:id="@+id/her_button"
+        android:scaleType="fitXY"
+        android:adjustViewBounds="true"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="Her Car"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/my_button"
+        android:layout_marginBottom="34dp"
+        android:id="@+id/her_car"
+        android:layout_toRightOf="@id/her_button"
+        android:gravity="center"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <ImageButton
+        app:srcCompat="@drawable/hiscar"
+        android:layout_marginTop="43dp"
+        android:id="@+id/his_button"
+        android:scaleType="fitXY"
+        android:adjustViewBounds="true"
+        android:layout_height="120dp"
+        android:layout_width="175dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:contentDescription="" />
+
+    <TextView
+        android:text="My Car"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:id="@+id/my_car"
+        android:gravity="center"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+        android:layout_alignBottom="@+id/my_button"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="43dp"
+        android:layout_toRightOf="@+id/my_button"
+        android:layout_toEndOf="@+id/my_button" />
+
+    <TextView
+        android:text="His Car"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="36dp"
+        android:id="@+id/his_car"
+        android:gravity="center"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+        android:layout_alignBottom="@+id/his_button"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@+id/his_button"
+        android:layout_toEndOf="@+id/his_button" />
+
+    <Button
+        android:text="Get Count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="35dp"
+        android:layout_marginEnd="35dp"
+        android:id="@+id/countnumber" />
+
+    <Button
+        android:text="Compare"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/my_button"
+        android:layout_toLeftOf="@+id/countnumber"
+        android:layout_toStartOf="@+id/countnumber"
+        android:layout_marginRight="18dp"
+        android:layout_marginEnd="18dp"
+        android:id="@+id/compare" />
+
+</RelativeLayout>
